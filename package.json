@@ -37,19 +37,19 @@
     "prebuild": "$npm_execpath run clean",
     "prepack": "$npm_execpath run build"
   },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "n-readlines": "^1.0.1",
+    "workspace-info": "^0.0.5"
+  },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
     "@types/node": "^22.15.30",
-    "chalk": "^4.0.0",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.1"
-  },
-  "dependencies": {
-    "n-readlines": "^1.0.1",
-    "workspace-info": "^0.0.5"
   }
 }
