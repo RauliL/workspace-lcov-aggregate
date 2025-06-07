@@ -1,0 +1,55 @@
+{
+  "name": "workspace-lcov-aggregate",
+  "version": "1.0.0",
+  "description": "Aggregates multiple LCOV results into one inside an monorepo.",
+  "main": "./main/index.js",
+  "author": "Rauli Laine <rauli.laine@iki.fi>",
+  "license": "MIT",
+  "keywords": [
+    "monorepo",
+    "coverage",
+    "workspace",
+    "lcov"
+  ],
+  "files": [
+    "./bin",
+    "./lib"
+  ],
+  "bin": {
+    "workspace-lcov-aggregate": "./bin/run.js"
+  },
+  "engines": {
+    "node": ">=20.0"
+  },
+  "homepage": "https://github.com/RauliL/workspace-lcov-aggregate",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RauliL/workspace-lcov-aggregate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RauliL/workspace-lcov-aggregate"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "clean": "rimraf './lib'",
+    "lint": "eslint './src/**/*.ts'",
+    "prebuild": "$npm_execpath run clean",
+    "prepack": "$npm_execpath run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^22.15.30",
+    "chalk": "^4.0.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1"
+  },
+  "dependencies": {
+    "n-readlines": "^1.0.1",
+    "workspace-info": "^0.0.5"
+  }
+}
