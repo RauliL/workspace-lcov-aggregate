@@ -2,7 +2,7 @@
   "name": "workspace-lcov-aggregate",
   "version": "1.0.0",
   "description": "Aggregates multiple LCOV results into one inside an monorepo.",
-  "main": "./main/index.js",
+  "main": "./lib/index.js",
   "author": "Rauli Laine <rauli.laine@iki.fi>",
   "license": "MIT",
   "keywords": [
